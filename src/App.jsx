@@ -13,6 +13,7 @@ function getRandomPair(lastQuote) {
 export default function App() {
   const [state, setState] = useState("idle"); // idle | shaking | revealing | revealed
   const [current, setCurrent] = useState(null);
+  const [copied, setCopied] = useState(false);
   const timeouts = useRef([]);
 
   const clearTimeouts = () => timeouts.current.forEach(clearTimeout);
@@ -151,6 +152,18 @@ export default function App() {
           outline-offset: 4px;
         }
         button:hover { opacity: 0.9; }
+        shareBtn: {
+    marginTop: "10px",
+    background: "transparent",
+    border: "1px solid #141e25",
+    color: "#2d5570",
+    padding: "9px 20px",
+    fontFamily: "'DM Mono', monospace",
+    fontSize: "10px",
+    letterSpacing: "0.15em",
+    cursor: "pointer",
+    transition: "all 0.2s",
+  },
       `}</style>
     </div>
   );
@@ -358,6 +371,19 @@ const s = {
     cursor: "pointer",
     transition: "all 0.2s",
   },
+  
+  <button
+                style={s.shareBtn}
+                onClick={() => {
+                  navigator.clipboard.writeText(
+                    `"${current.quote}" — ${current.marketer.name}, ${current.marketer.title} · ${current.marketer.company}\n\nmarketing-8ball.vercel.app`
+                  );
+                  setCopied(true);
+                  setTimeout(() => setCopied(false), 2000);
+                }}
+              >
+                {copied ? "✓ Copied" : "⎘ Copy quote"}
+              </button>
 
   // Footer
   footer: {
