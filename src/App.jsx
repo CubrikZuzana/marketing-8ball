@@ -157,7 +157,7 @@ export default function App() {
 }
 
 const BALL = 400;
-const WIN  = 300;
+const WIN  = 260;
 
 const s = {
   page: {
