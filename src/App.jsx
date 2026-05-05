@@ -156,8 +156,8 @@ export default function App() {
   );
 }
 
-const BALL = 320;
-const WIN  = 190;
+const BALL = 380;
+const WIN  = 240;
 
 const s = {
   page: {
@@ -302,7 +302,7 @@ const s = {
   },
   windowQuote: {
     fontFamily: "'DM Sans', sans-serif",
-    fontSize: "11px",
+    fontSize: "13px",
     lineHeight: 1.55,
     color: "#7ab0cc",
     textAlign: "center",
