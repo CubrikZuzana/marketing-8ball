@@ -156,7 +156,7 @@ export default function App() {
   );
 }
 
-const BALL = 400;
+const BALL = 380;
 const WIN  = 250;
 
 const s = {
@@ -207,7 +207,7 @@ const s = {
     fontStyle: "italic",
   },
   subtitle: {
-    fontSize: "15px",
+    fontSize: "14px",
     lineHeight: 1.6,
     color: "#555",
     fontWeight: 300,
