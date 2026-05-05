@@ -353,6 +353,15 @@ const QUOTES_BY_CATEGORY = {
     "Awards don't equal effectiveness. Effectiveness doesn't equal awards. We pursue both and achieve neither.",
     "The rebrand will fix it.",
   ],
+  
+  vibecoding: [
+    "Vibe coding is the future of marketing technology. Why hire a developer when you can prompt one?",
+    "We rebuilt our entire martech stack using AI. It took 3 hours and works 60% of the time, which is better than the original.",
+    "Our new campaign microsite was vibe-coded in an afternoon. The brief took three weeks.",
+    "I don't write briefs anymore. I vibe-prompt. The output is indistinguishable from what our agency produced, and costs 400x less.",
+    "The best marketing tech is the tech you built yourself at 11pm on a Tuesday without knowing how to code.",
+    "Vibe coding democratises marketing technology. Everyone can now build tools that half-work equally.",
+  ],
 };
 
 // Flatten all quotes into one array
