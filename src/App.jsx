@@ -47,7 +47,7 @@ export default function App() {
     <div style={s.page}>
       <div style={s.grain} />
       <header style={s.header}>
-        <p style={s.eyebrow}>◆ ASK THE ORACLE ◆</p>
+        <p style={s.eyebrow}>◆ STRATEGIC ADVISORY AGENCY ◆</p>
         <h1 style={s.title}>
           Marketing<br />
           <em style={s.titleAccent}>8-Ball</em>
